@@ -1,0 +1,107 @@
+<style>
+    .subscribe-button{
+        background-color:rgb(200, 0, 0);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: opacity 0.15s; /*opacity changes smoothly*/
+        vertical-align:top;
+
+    }
+    .subscribe-button:hover{
+        opacity:0.7; /*fade when we move cursor on the button*/
+    }
+    .subscribe-button:active{
+        opacity:0.4; /*fade when we click button*/ 
+    }
+    .join-button{
+        background-color:white;
+        border-color:rgb(41, 118, 211);
+        border-style:solid;
+        color:rgb(41, 118, 211);
+        border-width:1px;
+        padding-left:30px; /*spacing inside the button*/
+        padding-top:20px;
+        padding-bottom:20px;
+        padding-right:30px;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-right: 8px;
+        transition: background-color 0.15s,
+          color 0.15s;
+    }
+    .join-button:hover{  /*when we hover on button*/
+        background-color:rgb(41, 118, 211);
+        color:white;
+    }
+    .join-button:active{   /*backgroud-color : blue; when we click the button*/
+        opacity: 0.7;
+    }
+    .tweet-button{
+        background-color:rgb(2, 137, 255);
+        color:white;
+        border: none;
+        border-radius: 18px;
+        height: 36px;
+        width: 70px;
+        font-weight: bold;
+        cursor: pointer;
+        transition:box-shadhow 0.15s;
+        /*box-shadow:5px 5px 10px rgba(0, 0 ,0 ,0.15); to create a shadhow*/
+    }
+    .tweet-button:hover{
+         box-shadow:5px 5px 10px rgba(0, 0 ,0 ,0.15); /*to create a shadhow while hovering*/
+    }
+    .uber-button{
+        background-color:rgb(0, 0, 0);
+        color: white;
+        height: 40px;
+        width : 110px;
+        border:none;
+        cursor:pointer;
+        margin-left: 8px;
+    }
+    .amazon-button{
+        background-color:rgb(255, 216, 20);
+        border:none;
+        border-radius: 20px;
+        height: 30px;
+        width: 130px;
+        margin-left: 8px;
+        cursor: pointer;
+
+    }
+    .github-button{
+        background-color:rgb(46, 164, 79);
+        color: white;
+        border:none;
+        height: 40px;
+        width: 90px;
+        font-weight: bold;
+        font-size: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+</style>
+<button class = "subscribe-button">
+    SUBSCRIBE 
+</button>
+<button class = "join-button">
+    JOIN my channel
+</button>
+<button class = "tweet-button">
+    Tweet
+</button>
+<button class = "uber-button">
+    Request now
+</button>
+<button class = "amazon-button">
+    Add to Cart
+</button>
+<button class = "github-button">
+    Sign up
+</button>

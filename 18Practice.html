@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Friend Cards</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        /* Outer container — horizontal layout for all 3 cards */
+        .cards-container {
+            display: inline-block;
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* Each individual card — vertical layout */
+        .card {
+            display: inline-block;
+            width: 180px;
+            vertical-align: top;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: white;
+        }
+
+        /* Animal photo */
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        /* Bottom section of card */
+        .card-info {
+            padding: 10px;
+        }
+
+        /* Name */
+        .card-info h3 {
+            margin: 0 0 6px 0;
+            font-size: 16px;
+        }
+
+        /* Mutual friends row — horizontal layout */
+        .mutual-friends {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 10px;
+        }
+
+        /* Small profile icon */
+        .small-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: orange;
+        }
+
+        .mutual-friends span {
+            font-size: 13px;
+            color: gray;
+        }
+
+        /* Add Friend button */
+        .add-btn {
+            width: 100%;
+            padding: 8px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .add-btn:hover {
+            background-color: #1558b0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cards-container">
+
+        <!-- Card 1 — Oliver -->
+        <div class="card">
+            <img src="thumbnails/cat.jpg">
+            <div class="card-info">
+                <h3>Oliver</h3>
+                <div class="mutual-friends">
+                    <div class="small-icon"></div>
+                    <span>2 mutual friends</span>
+                </div>
+                <button class="add-btn">Add Friend</button>
+            </div>
+        </div>
+
+        <!-- Card 2 — Mimi -->
+        <div class="card">
+            <img src="thumbnails/youtube1.jpg">
+            <div class="card-info">
+                <h3>Mimi</h3>
+                <div class="mutual-friends">
+                    <div class="small-icon"></div>
+                    <span>3 mutual friends</span>
+                </div>
+                <button class="add-btn">Add Friend</button>
+            </div>
+        </div>
+
+        <!-- Card 3 — Rex -->
+        <div class="card">
+            <img src="thumbnails/thumbnail.jpg">
+            <div class="card-info">
+                <h3>Rex</h3>
+                <div class="mutual-friends">
+                    <div class="small-icon"></div>
+                    <span>4 mutual friends</span>
+                </div>
+                <button class="add-btn">Add Friend</button>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
